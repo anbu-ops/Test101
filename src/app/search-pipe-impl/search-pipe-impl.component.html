@@ -1,0 +1,40 @@
+<div class="form-group">
+    <label for="Stocksearch">Search stock:</label>
+    <input type="text" class="form-control" id="searchStock" placeholder="Enter stock" [(ngModel)]="searchStock">
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">contractID</th>
+        <th scope="col">strike</th>
+        <th scope="col">last</th>
+        <th scope="col">mark</th>
+        <th scope="col">bid</th>
+        <th scope="col">bid_size</th>
+        <th scope="col">implied_volatility</th>
+        <th scope="col">delta</th>
+        <th scope="col">gamma</th>
+        <th scope="col">theta</th>
+      </tr>
+    </thead>
+    <ng-container *ngFor="let stock of stocks | searchPipe: searchStock" >
+        <!-- <pre>{{stock | json}}</pre> -->
+    <tbody>
+      <tr>
+        <th scope="row">{{stock.contractID}}</th>
+        <td>{{stock.strike}}</td>
+        <td>{{stock.last}}</td>
+        <td>{{stock.mark}}</td>
+        <td>{{stock.bid}}</td>
+        <td>{{stock.bid_size}}</td>
+        <td>{{stock.implied_volatility}}</td>
+        <td>{{stock.delta}}</td>
+        <td>{{stock.gamma}}</td>
+        <td>{{stock.theta}}</td>
+      </tr>
+      
+    </tbody>
+</ng-container>
+  </table>
+</div>

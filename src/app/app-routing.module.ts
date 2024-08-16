@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ChangeDetectionChildComponent } from './ChangeDetection/change-detection-child/change-detection-child.component';
 import { ChangeDetectionParentComponent } from './ChangeDetection/change-detection-parent/change-detection-parent.component';
 import { T101Component } from './t101/t101.component';
+import { SearchPipeImplComponent } from './search-pipe-impl/search-pipe-impl.component';
 
 const routes: Routes = [
     {
@@ -16,6 +17,9 @@ const routes: Routes = [
       {
         path: 'CDSC',
         component: ChangeDetectionChildComponent
+        },{
+          path: 'stocks',
+          component: SearchPipeImplComponent
         }
 ];
 
