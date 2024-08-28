@@ -14,6 +14,7 @@ import { SearchPipeImplComponent } from './search-pipe-impl/search-pipe-impl.com
 import { SearchPipePipe } from './pipes/search-pipe.pipe';
 import { FormsModule } from '@angular/forms';
 import { NavigationComponent } from './navigation/navigation.component';
+import { AsyncPipeImplComponent } from './async-pipe-impl/async-pipe-impl.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     ChangeDetectionChildComponent,
     SearchPipeImplComponent,
     SearchPipePipe,
-    NavigationComponent
+    NavigationComponent,
+    AsyncPipeImplComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +36,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     FormsModule
   ],
   providers: [],
+  exports: [Customdirective1Directive],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

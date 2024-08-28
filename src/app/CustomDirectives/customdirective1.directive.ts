@@ -8,7 +8,8 @@ export class Customdirective1Directive {
   constructor(private el: ElementRef,private Rend: Renderer2) { 
   }
   ngOnInit() {
-    this.el.nativeElement.setStyle('overflow', 'hidden');
+    
+    this.Rend.setStyle(this.el.nativeElement, 'background-color', 'cyan');
   }
 
 }
