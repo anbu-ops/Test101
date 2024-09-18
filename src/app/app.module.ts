@@ -15,6 +15,7 @@ import { SearchPipePipe } from './pipes/search-pipe.pipe';
 import { FormsModule } from '@angular/forms';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AsyncPipeImplComponent } from './async-pipe-impl/async-pipe-impl.component';
+import { InputTypeComponent } from './input-type/input-type.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +29,7 @@ import { AsyncPipeImplComponent } from './async-pipe-impl/async-pipe-impl.compon
     SearchPipePipe,
     NavigationComponent,
     AsyncPipeImplComponent,
+    InputTypeComponent,
   ],
   imports: [
     BrowserModule,
