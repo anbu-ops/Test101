@@ -5,17 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { T101Component } from './t101/t101.component';
 import {HttpClientModule} from '@angular/common/http';
-import { LoginPageComponent } from './dashboard/login-page/login-page.component';
-import { LoginDetailsComponent } from './dashboard/login-details/login-details.component';
+
 import { Customdirective1Directive } from './CustomDirectives/customdirective1.directive';
 import { ChangeDetectionParentComponent } from './ChangeDetection/change-detection-parent/change-detection-parent.component';
 import { ChangeDetectionChildComponent } from './ChangeDetection/change-detection-child/change-detection-child.component';
 import { SearchPipeImplComponent } from './search-pipe-impl/search-pipe-impl.component';
 import { SearchPipePipe } from './pipes/search-pipe.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AsyncPipeImplComponent } from './async-pipe-impl/async-pipe-impl.component';
+<<<<<<< HEAD
 import { InputTypeComponent } from './input-type/input-type.component';
+=======
+import { LoginPageComponent } from './Dashboard/login-page/login-page.component';
+import { LoginDetailsComponent } from './Dashboard/login-details/login-details.component';
+import { ReactiveformComponent } from './forms/reactiveform/reactiveform.component';
+>>>>>>> a27a79baa935442894170c5a8bdb7d8b639d2550
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,13 +34,18 @@ import { InputTypeComponent } from './input-type/input-type.component';
     SearchPipePipe,
     NavigationComponent,
     AsyncPipeImplComponent,
+<<<<<<< HEAD
     InputTypeComponent,
+=======
+    ReactiveformComponent,
+>>>>>>> a27a79baa935442894170c5a8bdb7d8b639d2550
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   exports: [Customdirective1Directive],
