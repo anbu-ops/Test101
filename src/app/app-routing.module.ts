@@ -5,6 +5,7 @@ import { ChangeDetectionParentComponent } from './ChangeDetection/change-detecti
 import { T101Component } from './t101/t101.component';
 import { SearchPipeImplComponent } from './search-pipe-impl/search-pipe-impl.component';
 import { AsyncPipeImplComponent } from './async-pipe-impl/async-pipe-impl.component';
+import { ReactiveformComponent } from './forms/reactiveform/reactiveform.component';
 
 const routes: Routes = [
     {
@@ -24,6 +25,10 @@ const routes: Routes = [
         },{
           path: 'async',
           component: AsyncPipeImplComponent
+        },
+        {
+          path: 'reactive-form',
+          component: ReactiveformComponent
         }
 ];
 
