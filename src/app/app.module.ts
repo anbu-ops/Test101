@@ -14,13 +14,10 @@ import { SearchPipePipe } from './pipes/search-pipe.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AsyncPipeImplComponent } from './async-pipe-impl/async-pipe-impl.component';
-<<<<<<< HEAD
 import { InputTypeComponent } from './input-type/input-type.component';
-=======
 import { LoginPageComponent } from './Dashboard/login-page/login-page.component';
 import { LoginDetailsComponent } from './Dashboard/login-details/login-details.component';
 import { ReactiveformComponent } from './forms/reactiveform/reactiveform.component';
->>>>>>> a27a79baa935442894170c5a8bdb7d8b639d2550
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,11 +31,8 @@ import { ReactiveformComponent } from './forms/reactiveform/reactiveform.compone
     SearchPipePipe,
     NavigationComponent,
     AsyncPipeImplComponent,
-<<<<<<< HEAD
     InputTypeComponent,
-=======
     ReactiveformComponent,
->>>>>>> a27a79baa935442894170c5a8bdb7d8b639d2550
   ],
   imports: [
     BrowserModule,

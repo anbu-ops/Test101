@@ -1,0 +1,26 @@
+
+    <h1>Radio buttons</h1>
+<form>
+
+    <p>
+<label for="radio" class="radioButton">Press A: </label>&nbsp;&nbsp;
+<input type="radio" id="radio" name="group1" (click)="showDiv($event)" [(ngModel)]="selectedOption" value="A">
+</p>
+<p>
+<label for="radio2" class="radioButton">Press B: </label>&nbsp;&nbsp;
+<input type="radio" id="radio2" name="group1" (click)="showDiv($event)" [(ngModel)]="selectedOption" value="B">
+</p>
+<ng-container>
+    <div *ngIf="selectedOption == 'A'">
+        <h2>You selected option A</h2>
+
+    </div>
+    <div *ngIf="selectedOption == 'B'">
+        <h2>You selected option B</h2>
+
+    </div>
+</ng-container>
+
+</form>
+
+
