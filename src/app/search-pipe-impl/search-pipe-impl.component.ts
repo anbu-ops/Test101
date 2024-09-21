@@ -18,7 +18,7 @@ export class SearchPipeImplComponent {
   
 
   // org url : https://www.alphavantage.co/query?function=HISTORICAL_OPTIONS&symbol=IBM&apikey=A86BQ1FO19SO1DWV
-
+  // db url: http://ANKITs-MacBook-Air.local:3000/stocks
   ngOnInit() { 
     this.http.get('http://ANKITs-MacBook-Air.local:3000/stocks', 
       { headers: { 'Accept': 'application/json', 'User-Agent': 'request' }}).subscribe(responsePayload => {

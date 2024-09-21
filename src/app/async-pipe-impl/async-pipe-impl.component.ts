@@ -8,5 +8,5 @@ import { of } from 'rxjs';
 })
 export class AsyncPipeImplComponent {
 
-  obs$ = of(["ankit","Banerjee"])
+  obs$ = of(["Ankit","Banerjee"])
 }

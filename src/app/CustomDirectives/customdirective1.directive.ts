@@ -9,7 +9,7 @@ export class Customdirective1Directive {
   }
   ngOnInit() {
     
-    this.Rend.setStyle(this.el.nativeElement, 'background-color', 'cyan');
+    this.Rend.setStyle(this.el.nativeElement, 'background-color', '#FF5F1F');
   }
 
 }

@@ -5,7 +5,7 @@ import { Stock } from '../models/stock';
 
 //wildcard serach
 @Pipe({
-  name: 'searchPipe'
+  name: 'searchPipe',
 })
 export class SearchPipePipe implements PipeTransform {
 
